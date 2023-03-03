@@ -117,6 +117,7 @@ select {
   font-display: swap;
 }
 body {
+  font-family: "Gill Sans, sans-serif";
   /* base font size */
   font-size: 1rem;
 }
