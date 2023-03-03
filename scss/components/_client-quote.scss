@@ -1,0 +1,23 @@
+.client-quote {
+  width: 789px;
+  blockquote {
+    margin-bottom: 20px;
+    p {
+      font-weight: 600;
+      font-style: italic;
+      font-size: $font-size--15;
+      color: $yellow;
+      font-size: $font-size--15;
+    }
+  }
+  figcaption {
+    .author {
+      color: $brand-primary;
+      font-size: $font-size--15;
+    }
+    .title {
+      color: $gray;
+      font-size: $font-size--10;
+    }
+  }
+}

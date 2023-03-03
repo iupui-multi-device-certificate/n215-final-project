@@ -142,6 +142,7 @@ body {
 }
 
 .hero {
+  margin-bottom: 77px;
   height: 500px;
   width: 100%;
   display: flex;
@@ -181,6 +182,28 @@ body {
 .hero .hero-cta .hero-button {
   width: 121.62px;
   height: 40.04px;
+}
+
+.client-quote {
+  width: 789px;
+}
+.client-quote blockquote {
+  margin-bottom: 20px;
+}
+.client-quote blockquote p {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 15px;
+  color: #ffd140;
+  font-size: 15px;
+}
+.client-quote figcaption .author {
+  color: #ee4367;
+  font-size: 15px;
+}
+.client-quote figcaption .title {
+  color: #a8a8a8;
+  font-size: 10px;
 }
 
 .btn, .btn--round {
