@@ -1,4 +1,13 @@
-$color-primary: $pink;
+$brand-primary: $pink;
+$brand-secondary: $yellow;
+$brand-dark: $black;
+$brand-light: $white;
 
 $font-primary: "Gill Sans";
 $font-secondary: "PT Serif";
+
+//1 px = 0.0625 rem
+$px-to-rem-factor: 0.0625;
+$base-font-size: calc($font-size--16 * $px-to-rem-factor);
+
+$opacity: 80%;

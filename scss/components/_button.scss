@@ -1,0 +1,34 @@
+.btn {
+  background-color: $brand-primary;
+
+  //align text in button w/o changing size of button:
+  // https://stackoverflow.com/questions/13217797/how-to-align-the-text-middle-of-button
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  text-decoration: none;
+  color: $brand-light;
+  text-transform: uppercase;
+  font-size: $font-size--15;
+
+  &--round {
+    @extend .btn;
+    border-radius: 1.25rem;
+  }
+
+  &--small {
+    width: 133px;
+    white-space: nowrap;
+  }
+
+  &--medium {
+    width: 167px;
+  }
+
+  &--wide {
+    width: 100%;
+  }
+}

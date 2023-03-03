@@ -139,3 +139,126 @@ body {
   font-size: 25px;
   text-transform: uppercase;
 }
+
+.hero {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/home-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 80%;
+  color: #ffffff;
+}
+.hero .hero-cta {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #ffffff;
+}
+.hero .hero-cta p {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 50px;
+  max-width: 416px;
+  text-align: center;
+}
+.hero .hero-cta header h1 {
+  font-size: 40px;
+  font-family: "PT Serif";
+  margin-bottom: 10px;
+}
+.hero .hero-cta header p {
+  color: #ee4367;
+}
+.hero .hero-cta .hero-button {
+  width: 121.62px;
+  height: 40.04px;
+}
+
+.btn, .btn--round {
+  background-color: #ee4367;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.btn--round {
+  border-radius: 1.25rem;
+}
+.btn--small {
+  width: 133px;
+  white-space: nowrap;
+}
+.btn--medium {
+  width: 167px;
+}
+.btn--wide {
+  width: 100%;
+}
+
+.navbar {
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar .nav-content {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid;
+  margin-bottom: calc(48 / 1px);
+}
+.navbar .logo {
+  font-size: 1.25rem;
+  padding-top: 30px;
+  border: solid thin;
+}
+.navbar .links {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.navbar .links a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  color: #000000;
+}
+.navbar .links {
+  color: #ee4367;
+}
+.navbar .links a {
+  color: #000000;
+}
+
+.navbar--home {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  color: #ffffff;
+}
+.navbar--home .links {
+  color: #ee4367;
+}
+.navbar--home .links a {
+  color: #ffffff;
+}
