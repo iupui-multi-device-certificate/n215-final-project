@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eventsy</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="container">
+    <!-- bug: fixed-top is resulting in everything at top & not below nav. -->
+    <nav class="navbar navbar--home" id="navBar">
+      <!-- 
+        NOTE: h1 should not be used for the logo
+        https://www.fastcompany.com/3016894/should-your-tag-be-your-logo
+        https://stackoverflow.com/questions/665037/replacing-h1-text-with-a-logo-image-best-method-for-seo-and-accessibility
+      -->
+      <div class="nav-content content-width">
+        <!-- TODO: use image for logo and bar ? might be okay speed-wise if not use jQuery -->
+        <div class="logo">eventsy</div>
+        <div class="links">
+          <a href="home.html" id="home">home</a> /
+          <!-- prettier keeps collapsing about to line above -->
+          <!-- prettier-ignore -->
+          <a href="about.html" id="about">about</a> /
+          <a href="gallery.html" id="gallery">gallery</a> /
+          <a href="blog.html" id="blog">blog</a> /
+          <a href="contact" id="contact">contact </a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- <div id="app"></div> -->
+
+      <section class="hero">
+        <!-- SEMANTIC: 
+          use header when have subtitle
+          https://mikebifulco.com/posts/semantic-html-heading-subtitle#using-h2-as-a-subtitle-for-an-h1-is-incorrect
+      -->
+        <header>
+          <h1>Header goes here</h1>
+          <p>Less important text goes here</p>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+          aliquid minus nemo sed est.
+        </p>
+        <button>Read More</button>
+      </section>
+      <section class="client-quotes">
+        <!-- 
+        SEMANTIC HTML use figure:
+        https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/#aa-hey-what-about-the-figure-element
+        critique on: https://www.frontendmentor.io/solutions/testimonials-grid-section-pDG4eI238g
+      -->
+        <figure class="client-quote">
+          <blockquote>
+            <p>
+              “Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium totam rem aperiam eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Iste natus error sit voluptatem accusantium
+              doloremque laudantium totam rem aperiam eaque ipsa quae ab illo
+              inventore veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo”
+            </p>
+          </blockquote>
+          <figcaption class="client-quote-author">
+            <p>John Smith</p>
+            <p>Corporation CEO, books author.</p>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="events">events here</section>
+    </main>
+
+    <footer>
+      <div class="footer-content content-width">
+        <div class="logo">eventsy</div>
+        <address>
+          420 Smoke St. Los Angeles, CA 46318 <br />
+          (213)-467-2627<br />
+          info@eventsy.com
+        </address>
+        <form class="subscribe">
+          <input
+            type="email"
+            name="subcribe-email"
+            id="subcribe-email"
+            aria-label="subcribe-email"
+          />
+          <input
+            type="submit"
+            value="subscribe"
+            aria-label="subscribe-submit"
+          />
+        </form>
+        <div class="social">
+          <img src="./images/social-media/facebook.png" alt="facebook" />
+          <img src="./images/social-media/instagram.png" alt="instagram" />
+          <img src="./images/social-media/twitter.png" alt="twitter" />
+        </div>
+        <div class="copyright">Copyright 2019 eventsy. All rights reserved</div>
+      </div>
+    </footer>
+
+    <!-- <script src="app/app.js" type="module"></script> -->
+  </body>
+</html>

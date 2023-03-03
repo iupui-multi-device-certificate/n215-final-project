@@ -1,0 +1,44 @@
+/* reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+  skip setting html and body height for now
+  my portfolio site is responsive and works fine without these set
+*/
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+body {
+  /* base font size */
+  font-size: 1rem;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-weight: normal;
+}
+
+.content-width {
+  width: 80%;
+  margin: 0 auto;
+}
