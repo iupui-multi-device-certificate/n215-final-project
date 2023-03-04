@@ -7,7 +7,7 @@ const renderBlog = (blog) => `
   </div>
   <div class="blog-content">
     <img
-      src="${blog.relativeImagetPath}"
+      src="${blog.relativeImagePath}"
       alt=""
       class="blog-image"
     />
