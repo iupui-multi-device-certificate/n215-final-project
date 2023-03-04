@@ -1,5 +1,12 @@
 //TODO: yellow overlay
 
+$opacity: 80%;
+$shadow-color: #343a40;
+
+//https://love2dev.com/blog/responsive-hero-background-opacity/
+//https://github.com/docluv/Love2Dev-Code-Samples/blob/master/css/responsive-background-hero/index.html
+
+//Accessibility should use a shadow (text or background) to make test easier to read
 .hero {
   margin-bottom: 77px;
   height: 500px;
@@ -10,21 +17,44 @@
   align-items: center;
   justify-content: center;
 
-  background-image: url("../images/home-hero.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 80%;
-  // background-color: rgba($yellow, $opacity);
+  position: relative;
 
-  color: $brand-light;
+  &::before {
+    background-image: url("../images/home-hero.jpg");
+    // background-position: center;
+    background-size: cover;
+    // background-repeat: no-repeat;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: $opacity;
+  }
 
+  &::after {
+    background-color: $yellow;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: $opacity;
+  }
   .hero-cta {
     margin-top: 64px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+
+    // text-shadow: $shadow-color 2px 2px;
 
     color: $brand-light;
     p {
@@ -51,10 +81,17 @@
       height: 40.04px;
       // padding: 11px 26.3px 12px 27.3px;
     }
-    // width: 484px;
-    // height: 54px;
-    // text-align: center;
-    // font-size: 20px;
-    // margin-bottom: 46px;
+
+    // &::before {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   margin-left: 0;
+    //   min-width: 100%;
+    //   min-height: 12em;
+    //   z-index: -1;
+    //   opacity: 80%;
+    //   background-color: #343a40;
+    // }
   }
 }
