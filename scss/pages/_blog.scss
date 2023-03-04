@@ -4,39 +4,44 @@
   justify-content: space-between;
 
   // gap: 60px;
-  .blog-post {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
-    .blog-content {
-      width: 380px;
-      .blog-image {
-        margin-bottom: 20px;
-        width: 100%;
-      }
-
-      .blog-text {
-        .blog-title {
-          font-size: 15px;
-          margin-bottom: 11px;
-
-          a {
-            text-decoration: none;
-            color: $brand-dark;
-
-            &::before {
-              content: " ";
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            }
-          }
+  a {
+    text-decoration: none;
+    color: $brand-dark;
+    .blog-post {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      .blog-content {
+        width: 380px;
+        .blog-image {
+          margin-bottom: 20px;
+          width: 100%;
         }
-        .blog-paragraph {
-          font-size: 13px;
-          color: $brand-primary;
+
+        .blog-text {
+          .blog-title {
+            font-size: 15px;
+            margin-bottom: 11px;
+
+            // a {
+            // text-decoration: none;
+            // color: $brand-dark;
+            //https://css-tricks.com/block-links-the-search-for-a-perfect-solution/
+            //this interferes with the listener
+            // &::before {
+            //   content: " ";
+            //   position: absolute;
+            //   top: 0;
+            //   left: 0;
+            //   width: 100%;
+            //   height: 100%;
+            // }
+            // }
+          }
+          .blog-paragraph {
+            font-size: 13px;
+            color: $brand-primary;
+          }
         }
       }
     }

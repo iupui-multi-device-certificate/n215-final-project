@@ -16,6 +16,7 @@ const blogPage = blogView(blogs);
 //blog detail
 const blogClickHandler = (e) => {
   let blogID = e.currentTarget.id;
+  console.log("blogID: ", blogID);
 
   //if use === get undefined because blog.id is a number
   //ideally should convert so they're on same data type & then use ===
