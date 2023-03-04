@@ -1,0 +1,27 @@
+.events {
+  height: 320px;
+  padding: 50px 40px 72px 40px;
+  background-color: $purple;
+  color: $brand-light;
+
+  .events-list {
+    display: flex;
+    gap: 20px;
+
+    .event-item {
+      display: flex;
+      gap: 20px;
+
+      .event-text {
+        max-width: 140px;
+        .event-title {
+          font-size: $font-size--15;
+        }
+        .event-paragraph {
+          font-size: $font-size--13;
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
-export const blogs = [
+export const events = [
   {
     id: 1,
     relativeImagetPath: "./images/gallery/1.png",
-    datePublished: "2023-06-06",
+    eventDate: "2023-06-06",
     title: "Sed et persipiatis unde omnis iste natus",
     summary: `      <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid temporibus quos aspernatur
@@ -14,7 +14,7 @@ export const blogs = [
   {
     id: 2,
     relativeImagetPath: "./images/gallery/2.jpeg",
-    datePublished: "2023-07-30",
+    eventDate: "2023-07-30",
     title: "Sed et persipiatis unde omnis iste natus",
     summary: `      <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid temporibus quos aspernatur
@@ -26,7 +26,7 @@ export const blogs = [
   {
     id: 3,
     relativeImagetPath: "./images/gallery/3.jpeg",
-    datePublished: "2023-08-30",
+    eventDate: "2023-08-30",
     title: "Sed et persipiatis unde omnis iste natus",
     summary: `      <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid temporibus quos aspernatur
@@ -38,7 +38,7 @@ export const blogs = [
   {
     id: 4,
     relativeImagetPath: "./images/gallery/4.jpeg",
-    datePublished: "2023-11-23",
+    eventDate: "2023-11-23",
     title: "Sed et persipiatis unde omnis iste natus",
     summary: `      <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid temporibus quos aspernatur
@@ -50,7 +50,7 @@ export const blogs = [
   {
     id: 5,
     relativeImagetPath: "./images/gallery/5.jpeg",
-    datePublished: "2023-12-23",
+    eventDate: "2023-12-23",
     title: "Sed et persipiatis unde omnis iste natus",
     summary: `      <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid temporibus quos aspernatur

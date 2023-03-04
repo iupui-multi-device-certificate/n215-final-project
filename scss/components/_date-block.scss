@@ -1,0 +1,21 @@
+//TODO: convert to mixin or extend for use in blog detail view
+.date-block {
+  color: $brand-light;
+  background-color: $brand-primary;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .day {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .month {
+    font-size: 12px;
+    font-weight: $light-weight;
+  }
+}

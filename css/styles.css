@@ -135,10 +135,12 @@ body {
   text-transform: uppercase;
 }
 
-.page-title {
+.section-title {
   font-family: "Gill Sans";
   font-size: 25px;
   text-transform: uppercase;
+  margin-bottom: 45px;
+  display: block;
 }
 
 .logo--light, .logo {
@@ -216,6 +218,25 @@ body {
 .hero .hero-cta .hero-button {
   width: 121.62px;
   height: 40.04px;
+}
+
+.date-block {
+  color: #ffffff;
+  background-color: #ee4367;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.date-block .day {
+  font-size: 22px;
+  font-weight: 700;
+}
+.date-block .month {
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .client-quote {
@@ -365,4 +386,29 @@ footer .footer-content .copyright {
 }
 .form-subscribe > * {
   height: 60px;
+}
+
+.events {
+  height: 320px;
+  padding: 50px 40px 72px 40px;
+  background-color: #540d6e;
+  color: #ffffff;
+}
+.events .events-list {
+  display: flex;
+  gap: 20px;
+}
+.events .events-list .event-item {
+  display: flex;
+  gap: 20px;
+}
+.events .events-list .event-item .event-text {
+  max-width: 140px;
+}
+.events .events-list .event-item .event-text .event-title {
+  font-size: 15px;
+}
+.events .events-list .event-item .event-text .event-paragraph {
+  font-size: 13px;
+  color: #ee4367;
 }

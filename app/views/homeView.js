@@ -1,4 +1,4 @@
-export const homeView = () => `  
+export const homeView = (eventsComponent) => `  
 <section class="hero">
 <!-- SEMANTIC: 
   use header when have subtitle
@@ -40,5 +40,6 @@ critique on: https://www.frontendmentor.io/solutions/testimonials-grid-section-p
   </figcaption>
 </figure>
 </section>
-<section class="events content-width">events here</section>    
+${eventsComponent}
+  
 `;

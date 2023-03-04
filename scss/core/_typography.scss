@@ -11,6 +11,17 @@ $font-size--115: 115px;
 $font-size--140: 140px;
 $font-size--300: 300px;
 
+// Weights
+$hairline-weight: 100;
+$thin-weight: 200;
+$light-weight: 300;
+$normal-weight: 400;
+$medium-weight: 500;
+$semibold-weight: 600;
+$bold-weight: 700;
+$xbold-weight: 800;
+$black-weight: 900;
+
 //font face rules
 @font-face {
   font-family: "Gill Sans";
