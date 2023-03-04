@@ -7,10 +7,25 @@ import { blogView } from "./views/blogView.js";
 
 //home page
 const homePage = homeView(eventsView(events));
-// const homePage = homeView(tours);
+// const homePage = homeView(blogs);
 
 //blogs page
 const blogPage = blogView(blogs);
+
+//blog detail
+const blogClickHandler = (e) => {
+  let blogID = e.currentTarget.id;
+
+  //if use === get undefined because blog.id is a number
+  //ideally should convert so they're on same data type & then use ===
+  const getBlog = (blogID) => blogs.find((blog) => blogID == blog.id);
+
+  const requestedBlog = getBlog(blogID);
+
+  const blogPage = blogDetailView(requestedBlog);
+
+  $("#app").html(blogPage);
+};
 
 // general stuff
 const setPage = (pageID) => {
@@ -50,6 +65,10 @@ const initListeners = () => {
   //if time convert to vanilla javascript
   $("nav a").click(function (e) {
     navClickHandler(e);
+  });
+
+  $(document).on("click", ".blog-post", function (e) {
+    blogClickHandler(e);
   });
 };
 
