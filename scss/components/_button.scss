@@ -31,4 +31,9 @@
   &--wide {
     width: 100%;
   }
+
+  &--reverse {
+    color: $brand-primary;
+    background-color: $brand-light;
+  }
 }

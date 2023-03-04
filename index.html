@@ -32,6 +32,7 @@
     <main>
       <!-- <div id="app"></div> -->
 
+      <!-- TODO: pull logo out into component or switch to image -->
       <section class="hero">
         <!-- SEMANTIC: 
           use header when have subtitle
@@ -77,24 +78,27 @@
     </main>
 
     <footer>
-      <div class="footer-content content-width">
+      <div class="footer-content">
         <div class="logo">eventsy</div>
         <address>
-          420 Smoke St. Los Angeles, CA 46318 <br />
-          (213)-467-2627<br />
-          info@eventsy.com
+          <p>420 Smoke St. Los Angeles, CA 46318</p>
+          <p>(213)-467-2627</p>
+          <p>info@eventsy.com</p>
         </address>
-        <form class="subscribe">
+        <form class="form-subscribe">
           <input
             type="email"
             name="subcribe-email"
             id="subcribe-email"
             aria-label="subcribe-email"
+            class="form-element"
+            placeholder="Enter your email to join newsletter…"
           />
           <input
             type="submit"
             value="subscribe"
             aria-label="subscribe-submit"
+            class="btn btn--medium btn--reverse"
           />
         </form>
         <div class="social">

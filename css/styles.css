@@ -230,6 +230,44 @@ body {
 .btn--wide {
   width: 100%;
 }
+.btn--reverse {
+  color: #ee4367;
+  background-color: #ffffff;
+}
+
+footer {
+  height: 455px;
+  background-color: #ee4367;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .footer-content {
+  margin-top: 36px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+footer .footer-content address {
+  font-style: normal;
+  color: #ffffff;
+  text-align: center;
+}
+footer .footer-content address p {
+  margin-bottom: 5px;
+}
+footer .footer-content .social {
+  display: flex;
+  gap: 30.5px;
+}
+footer .footer-content .copyright {
+  color: #a8a8a8;
+  font-size: 12px;
+  margin-bottom: 36px;
+}
 
 .navbar {
   margin-left: auto;
@@ -285,4 +323,17 @@ body {
 }
 .navbar--home .links a {
   color: #ffffff;
+}
+
+.form-subscribe {
+  display: flex;
+}
+.form-subscribe .form-element {
+  width: 529px;
+  padding: 20px;
+  border: none;
+  opacity: 50%;
+}
+.form-subscribe > * {
+  height: 60px;
 }

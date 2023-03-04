@@ -1,0 +1,12 @@
+.form-subscribe {
+  display: flex;
+  .form-element {
+    width: 529px;
+    padding: 20px;
+    border: none;
+    opacity: 50%;
+  }
+  & > * {
+    height: 60px;
+  }
+}

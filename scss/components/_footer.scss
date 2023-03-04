@@ -1,0 +1,36 @@
+footer {
+  height: 455px;
+  background-color: $pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .footer-content {
+    margin-top: 36px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    address {
+      font-style: normal;
+      color: $brand-light;
+      text-align: center;
+      p {
+        margin-bottom: 5px;
+      }
+    }
+
+    .social {
+      display: flex;
+      gap: 30.5px;
+      // justify-content: space-evenly;
+    }
+    .copyright {
+      color: $gray;
+      font-size: $font-size--12;
+      margin-bottom: 36px;
+    }
+  }
+}
