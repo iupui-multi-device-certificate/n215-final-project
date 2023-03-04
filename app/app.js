@@ -49,6 +49,14 @@ const setNavBar = (pageID) => {
   document
     .getElementById("navBar")
     .classList.toggle("navbar--home", pageID === "homePage");
+
+  if (pageID === "homePage") {
+    document.getElementById("navLogoImage").src =
+      "./images/logo/logo-white.png";
+  } else {
+    document.getElementById("navLogoImage").src =
+      "./images/logo/logo-black.png";
+  }
 };
 
 const navClickHandler = (e) => {
