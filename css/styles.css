@@ -478,3 +478,17 @@ footer .footer-content .copyright {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.blog-post-detail .blog-sections {
+  line-height: 23px;
+}
+.blog-post-detail .blog-sections h2 {
+  font-size: 20px;
+  color: #ee4367;
+  margin-bottom: 30px;
+}
+.blog-post-detail .blog-sections p {
+  margin-bottom: 33px;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}

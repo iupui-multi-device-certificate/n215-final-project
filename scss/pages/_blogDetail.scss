@@ -17,4 +17,21 @@
       transform: translate(-50%, -50%);
     }
   }
+
+  .blog-sections {
+    line-height: 23px;
+    h2 {
+      font-size: $font-size--20;
+      color: $brand-primary;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 33px;
+      font-size: $font-size--20;
+      font-weight: $light-weight;
+
+      letter-spacing: 2px;
+    }
+  }
 }
