@@ -9,7 +9,6 @@ import { blogDetailView } from "./views/blogDetailView.js";
 
 //home page
 const homePage = homeView(eventsView(events));
-// const homePage = homeView(blogs);
 
 //blogs page
 const blogPage = blogView(blogs);
@@ -38,8 +37,6 @@ const setPage = (pageID) => {
     Ideally, find a more generic routing (maybe hashtag-based) to remove the need to use eval. 
  */
 
-  // console.log(homePage);
-  // console.log(eventsComponent);
   $("#app").html(eval(pageID));
 };
 
@@ -55,8 +52,6 @@ const setNavBar = (pageID) => {
 
 const navClickHandler = (e) => {
   let aID = e.currentTarget.id;
-
-  console.log("you clicked: ", aID);
 
   let pageID = aID + "Page";
   setPage(pageID);
