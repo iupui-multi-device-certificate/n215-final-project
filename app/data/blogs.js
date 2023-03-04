@@ -1,7 +1,8 @@
 export const blogs = [
   {
     id: 1,
-    relativeImagePath: "./images/blogs/blog-small.png",
+    relativeImagePathSmall: "./images/blogs/blog-small.png",
+    relativeImagePath: "./images/blogs/blog.png",
     datePublished: "2023-06-06",
     title: "Sed et persipiatis unde omnis iste natus",
     summary: `      <p>
@@ -24,7 +25,8 @@ export const blogs = [
   },
   {
     id: 2,
-    relativeImagePath: "./images/blogs/blog-small.png",
+    relativeImagePathSmall: "./images/blogs/blog-small.png",
+    relativeImagePath: "./images/blogs/blog.png",
     datePublished: "2023-07-30",
     title: "Sed et persipiatis unde omnis iste natus",
     summary: `      <p>
@@ -47,7 +49,8 @@ export const blogs = [
   },
   {
     id: 3,
-    relativeImagePath: "./images/blogs/blog-small.png",
+    relativeImagePathSmall: "./images/blogs/blog-small.png",
+    relativeImagePath: "./images/blogs/blog.png",
     datePublished: "2023-08-30",
     title: "Sed et persipiatis unde omnis iste natus",
     summary: `      <p>
@@ -70,7 +73,8 @@ export const blogs = [
   },
   {
     id: 4,
-    relativeImagePath: "./images/blogs/blog-small.png",
+    relativeImagePathSmall: "./images/blogs/blog-small.png",
+    relativeImagePath: "./images/blogs/blog.png",
     datePublished: "2023-11-23",
     title: "Sed et persipiatis unde omnis iste natus",
     summary: `      <p>
@@ -93,7 +97,8 @@ export const blogs = [
   },
   {
     id: 5,
-    relativeImagePath: "./images/blogs/blog-small.png",
+    relativeImagePathSmall: "./images/blogs/blog-small.png",
+    relativeImagePath: "./images/blogs/blog.png",
     datePublished: "2023-12-23",
     title: "Sed et persipiatis unde omnis iste natus",
     summary: `      <p>
