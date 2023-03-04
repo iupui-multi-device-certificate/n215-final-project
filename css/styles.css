@@ -218,7 +218,7 @@ body {
   height: 40.04px;
 }
 
-.date-block {
+.date-block-large, .date-block {
   color: #ffffff;
   background-color: #ee4367;
   display: flex;
@@ -226,10 +226,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-.date-block .day {
+.date-block-large .day, .date-block .day {
   font-weight: 700;
 }
-.date-block .month {
+.date-block-large .month, .date-block .month {
   font-size: 12px;
   font-weight: 300;
 }

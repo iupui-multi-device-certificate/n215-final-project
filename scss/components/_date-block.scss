@@ -33,6 +33,7 @@
 }
 
 .date-block-large {
+  @extend %date-block-shared;
   width: 155.25px;
   height: 155.25px;
 
