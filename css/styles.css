@@ -452,6 +452,18 @@ footer .footer-content .copyright {
   font-size: 15px;
   margin-bottom: 11px;
 }
+.blogs .blog-post .blog-content .blog-text .blog-title a {
+  text-decoration: none;
+  color: #000000;
+}
+.blogs .blog-post .blog-content .blog-text .blog-title a::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .blogs .blog-post .blog-content .blog-text .blog-paragraph {
   font-size: 13px;
   color: #ee4367;

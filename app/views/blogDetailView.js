@@ -1,3 +1,3 @@
 export const blogDetailView = (blog) => `
-  ${blog.id}
+<p> ${blog.id}</p>
 `;

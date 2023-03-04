@@ -5,6 +5,8 @@ import { eventsView } from "./views/partials/_eventsView.js";
 import { blogs } from "./model.js";
 import { blogView } from "./views/blogView.js";
 
+import { blogDetailView } from "./views/blogDetailView.js";
+
 //home page
 const homePage = homeView(eventsView(events));
 // const homePage = homeView(blogs);
@@ -67,7 +69,7 @@ const initListeners = () => {
     navClickHandler(e);
   });
 
-  $(document).on("click", ".blog-post", function (e) {
+  $(document).on("click", ".blog-link", function (e) {
     blogClickHandler(e);
   });
 };

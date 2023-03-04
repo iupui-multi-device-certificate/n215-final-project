@@ -13,7 +13,9 @@ const renderBlog = (blog) => `
     />
     <div class="blog-text">
       <h1 class="blog-title">
-        ${blog.title}
+        <a href="#" id="${blog.id}" class="blog-link">
+          ${blog.title}
+        </a>
       </h1>
       <div class="blog-paragraph">
         ${blog.summary}
