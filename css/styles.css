@@ -135,6 +135,15 @@ body {
   text-transform: uppercase;
 }
 
+.underline:after {
+  content: "";
+  display: block;
+  width: 229px;
+  height: 1px;
+  background-color: #000000;
+  margin-top: 10.5px;
+}
+
 .section-title {
   font-family: "Gill Sans";
   font-size: 25px;

@@ -34,7 +34,7 @@ const renderBlogs = (blogs) => ` ${blogs
 
 export const blogView = (blogs) => `
 <section class="blog content-width ">
-<h1 class="section-title upper">blog:</h1>
+<h1 class="section-title upper underline">blog:</h1>
 <div class="blogs">
   ${renderBlogs(blogs)}
 </div>
