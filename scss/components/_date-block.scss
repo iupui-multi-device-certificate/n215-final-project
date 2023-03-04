@@ -1,21 +1,46 @@
 //TODO: convert to mixin or extend for use in blog detail view
-.date-block {
+%date-block-shared {
   color: $brand-light;
   background-color: $brand-primary;
-  width: 60px;
-  height: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   .day {
-    font-size: 22px;
     font-weight: 700;
   }
 
   .month {
     font-size: 12px;
     font-weight: $light-weight;
+  }
+}
+
+.date-block {
+  @extend %date-block-shared;
+  width: 60px;
+  height: 60px;
+  display: flex;
+
+  .day {
+    font-size: 22px;
+  }
+
+  .month {
+    font-size: 12px;
+  }
+}
+
+.date-block-large {
+  width: 155.25px;
+  height: 155.25px;
+
+  .day {
+    font-size: 55px;
+  }
+
+  .month {
+    font-size: 31px;
   }
 }

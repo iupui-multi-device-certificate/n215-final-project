@@ -221,20 +221,40 @@ body {
 .date-block {
   color: #ffffff;
   background-color: #ee4367;
-  width: 60px;
-  height: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .date-block .day {
-  font-size: 22px;
   font-weight: 700;
 }
 .date-block .month {
   font-size: 12px;
   font-weight: 300;
+}
+
+.date-block {
+  width: 60px;
+  height: 60px;
+  display: flex;
+}
+.date-block .day {
+  font-size: 22px;
+}
+.date-block .month {
+  font-size: 12px;
+}
+
+.date-block-large {
+  width: 155.25px;
+  height: 155.25px;
+}
+.date-block-large .day {
+  font-size: 55px;
+}
+.date-block-large .month {
+  font-size: 31px;
 }
 
 .client-quote {
