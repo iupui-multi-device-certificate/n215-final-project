@@ -31,7 +31,7 @@ const renderBlogs = (blogs) => ` ${blogs
   .map((blog) => renderBlog(blog))
   .join("")}
 `;
-//TODO: fix top margin, not consistent across pages
+
 export const blogView = (blogs) => `
 <section class="blog content-width ">
 <h1 class="section-title upper">blog:</h1>
