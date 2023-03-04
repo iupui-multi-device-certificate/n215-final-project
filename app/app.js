@@ -20,6 +20,16 @@ const setPage = (pageID) => {
   $("#app").html(eval(pageID));
 };
 
+const setNavBar = (pageID) => {
+  //make use of built-in conditional
+  //https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+  // add/remove visible, depending on test conditional, i less than 10
+  // div.classList.toggle("visible", i < 10);
+  document
+    .getElementById("navBar")
+    .classList.toggle("navbar--home", pageID === "homePage");
+};
+
 const navClickHandler = (e) => {
   let aID = e.currentTarget.id;
 
@@ -27,7 +37,7 @@ const navClickHandler = (e) => {
 
   let pageID = aID + "Page";
   setPage(pageID);
-  // setNavBar(pageID);
+  setNavBar(pageID);
 };
 
 const initListeners = () => {
