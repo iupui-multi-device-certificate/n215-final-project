@@ -1,0 +1,17 @@
+//https://codepen.io/StephenScaff/pen/zxzxWN
+
+//https://love2dev.com/blog/responsive-hero-background-opacity/
+//https://github.com/docluv/Love2Dev-Code-Samples/blob/master/css/responsive-background-hero/index.html
+
+@mixin overlay-after($bgColor: $yellow, $bgOpacity: 0.8) {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba($bgColor, $bgOpacity);
+    z-index: -1;
+  }
+}

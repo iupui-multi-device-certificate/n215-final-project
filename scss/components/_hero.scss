@@ -1,11 +1,5 @@
 //TODO: yellow overlay
 
-$opacity: 80%;
-$shadow-color: #343a40;
-
-//https://love2dev.com/blog/responsive-hero-background-opacity/
-//https://github.com/docluv/Love2Dev-Code-Samples/blob/master/css/responsive-background-hero/index.html
-
 //Accessibility should use a shadow (text or background) to make test easier to read
 .hero {
   margin-bottom: 77px;
@@ -35,26 +29,15 @@ $shadow-color: #343a40;
     opacity: $opacity;
   }
 
-  &::after {
-    background-color: $yellow;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: $opacity;
-  }
+  @include overlay-after;
+  // &::after {
+
   .hero-cta {
     margin-top: 64px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-
-    // text-shadow: $shadow-color 2px 2px;
 
     color: $brand-light;
     p {
@@ -81,17 +64,5 @@ $shadow-color: #343a40;
       height: 40.04px;
       // padding: 11px 26.3px 12px 27.3px;
     }
-
-    // &::before {
-    //   content: "";
-    //   display: block;
-    //   position: absolute;
-    //   margin-left: 0;
-    //   min-width: 100%;
-    //   min-height: 12em;
-    //   z-index: -1;
-    //   opacity: 80%;
-    //   background-color: #343a40;
-    // }
   }
 }

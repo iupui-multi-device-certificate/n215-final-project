@@ -7,6 +7,9 @@
 @import "core/variables";
 @import "core/base";
 
+//mixins
+@import "mixins/overlay";
+
 //components
 @import "components/logo";
 @import "components/hero";

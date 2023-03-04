@@ -181,16 +181,14 @@ body {
   opacity: 80%;
 }
 .hero::after {
-  background-color: #ffd140;
   content: "";
-  display: block;
   position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
+  top: 0;
+  left: 0;
   height: 100%;
+  width: 100%;
+  background: rgba(255, 209, 64, 0.8);
   z-index: -1;
-  opacity: 80%;
 }
 .hero .hero-cta {
   margin-top: 64px;
