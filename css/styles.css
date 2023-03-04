@@ -141,6 +141,20 @@ body {
   text-transform: uppercase;
 }
 
+.logo--light, .logo {
+  font-size: 1.25rem;
+  padding-top: 30px;
+  border: solid thin;
+}
+
+.logo {
+  color: #000000;
+}
+
+.logo--light {
+  color: #ffffff;
+}
+
 .hero {
   margin-bottom: 77px;
   height: 500px;
@@ -280,11 +294,6 @@ footer .footer-content .copyright {
   justify-content: space-between;
   border-bottom: 2px solid;
   margin-bottom: calc(48 / 1px);
-}
-.navbar .logo {
-  font-size: 1.25rem;
-  padding-top: 30px;
-  border: solid thin;
 }
 .navbar .links {
   display: flex;

@@ -1,0 +1,17 @@
+//not sure I see issue with logo styling
+
+%logo {
+  font-size: 1.25rem; //20px
+  padding-top: 30px;
+  border: solid thin;
+}
+
+.logo {
+  @extend %logo;
+  color: $brand-dark;
+}
+
+.logo--light {
+  @extend %logo;
+  color: $brand-light;
+}
