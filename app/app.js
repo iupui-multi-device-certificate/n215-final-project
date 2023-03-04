@@ -31,9 +31,9 @@ const navClickHandler = (e) => {
 };
 
 const initListeners = () => {
-  document.querySelector("nav a").addEventListener("click", (e) => {
+  //if time convert to vanilla javascript
+  $("nav a").click(function (e) {
     navClickHandler(e);
-    // console.log(e.currentTarget.id);
   });
 };
 
