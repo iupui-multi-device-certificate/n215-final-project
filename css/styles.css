@@ -412,3 +412,31 @@ footer .footer-content .copyright {
   font-size: 13px;
   color: #ee4367;
 }
+
+.blogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blogs .blog-post {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.blogs .blog-post .blog-content {
+  width: 380px;
+}
+.blogs .blog-post .blog-content .blog-image {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.blogs .blog-post .blog-content .blog-text .blog-title {
+  font-size: 15px;
+  margin-bottom: 11px;
+}
+.blogs .blog-post .blog-content .blog-text .blog-paragraph {
+  font-size: 13px;
+  color: #ee4367;
+}
+
+/* breakpoint small */

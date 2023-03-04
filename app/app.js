@@ -2,9 +2,15 @@ import { homeView } from "./views/homeView.js";
 import { events } from "./model.js";
 import { eventsView } from "./views/partials/_eventsView.js";
 
+import { blogs } from "./model.js";
+import { blogView } from "./views/blogView.js";
+
 //home page
 const homePage = homeView(eventsView(events));
 // const homePage = homeView(tours);
+
+//blogs page
+const blogPage = blogView(blogs);
 
 // general stuff
 const setPage = (pageID) => {
