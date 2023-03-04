@@ -2,6 +2,8 @@ import { homeView } from "./views/homeView.js";
 import { events } from "./model.js";
 import { eventsView } from "./views/partials/_eventsView.js";
 
+import { aboutView } from "./views/aboutView.js";
+
 import { blogs } from "./model.js";
 import { blogView } from "./views/blogView.js";
 
@@ -11,6 +13,9 @@ import { contactView } from "./views/contactView.js";
 
 //home page
 const homePage = homeView(eventsView(events));
+
+//about page
+const aboutPage = aboutView;
 
 //blogs page
 const blogPage = blogView(blogs);
