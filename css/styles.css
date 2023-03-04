@@ -463,3 +463,18 @@ footer .footer-content .copyright {
 }
 
 /* breakpoint small */
+.blog-post-detail {
+  margin-top: 55.5px;
+}
+.blog-post-detail .blog-banner {
+  margin: 0 auto;
+  width: 981px;
+  height: 300px;
+  margin-bottom: 57px;
+}
+.blog-post-detail .blog-banner .date-block-large {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

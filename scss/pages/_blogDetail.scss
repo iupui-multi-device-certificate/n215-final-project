@@ -1,0 +1,20 @@
+.blog-post-detail {
+  margin-top: 55.5px;
+  .blog-banner {
+    margin: 0 auto;
+    width: 981px;
+    height: 300px;
+    margin-bottom: 57px;
+    // img {
+    //   object-fit: cover;
+    //   object-position: center;
+    // }
+
+    .date-block-large {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
