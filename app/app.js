@@ -7,6 +7,8 @@ import { blogView } from "./views/blogView.js";
 
 import { blogDetailView } from "./views/blogDetailView.js";
 
+import { contactView } from "./views/contactView.js";
+
 //home page
 const homePage = homeView(eventsView(events));
 
@@ -28,6 +30,9 @@ const blogClickHandler = (e) => {
 
   $("#app").html(blogPage);
 };
+
+//contact page
+const contactPage = contactView;
 
 // general stuff
 const setPage = (pageID) => {
