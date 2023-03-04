@@ -531,6 +531,7 @@ footer .footer-content .copyright {
   width: 981px;
   height: 300px;
   margin-bottom: 57px;
+  position: relative;
 }
 .blog-post-detail .blog-banner .date-block-large {
   position: absolute;
