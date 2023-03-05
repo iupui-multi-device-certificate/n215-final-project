@@ -4,6 +4,9 @@ import { eventsView } from "./views/partials/_eventsView.js";
 
 import { aboutView } from "./views/aboutView.js";
 
+import { galleryItems } from "./data/galleryItems.js";
+import { galleryView } from "./views/galleryView.js";
+
 import { blogs } from "./model.js";
 import { blogView } from "./views/blogView.js";
 
@@ -16,6 +19,9 @@ const homePage = homeView(eventsView(events));
 
 //about page
 const aboutPage = aboutView;
+
+//gallery page
+const galleryPage = galleryView(galleryItems);
 
 //blogs page
 const blogPage = blogView(blogs);

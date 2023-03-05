@@ -1,4 +1,4 @@
-export const events = [
+export const galleryItems = [
   {
     id: 1,
     relativeImagePath: "./images/gallery/1.png",

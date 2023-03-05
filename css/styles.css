@@ -520,6 +520,58 @@ footer .footer-content .copyright {
   line-height: 18px;
 }
 
+.gallery-items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.gallery-items-wrapper a {
+  position: relative;
+}
+.gallery-items-wrapper a img {
+  display: block;
+}
+.gallery-items-wrapper a .overlay-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8));
+}
+.gallery-items-wrapper a .overlay-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(238, 67, 103, 0.8), rgba(238, 67, 103, 0.8));
+}
+.gallery-items-wrapper a .overlay-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(8, 173, 105, 0.8), rgba(8, 173, 105, 0.8));
+}
+.gallery-items-wrapper a .overlay-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(84, 13, 110, 0.8), rgba(84, 13, 110, 0.8));
+}
+.gallery-items-wrapper a .overlay-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(59, 206, 171, 0.8), rgba(59, 206, 171, 0.8));
+}
+
 .blogs {
   display: flex;
   flex-wrap: wrap;
