@@ -476,6 +476,7 @@ footer .footer-content .copyright {
 .wrapper-contact {
   max-width: 100%;
   display: flex;
+  justify-content: space-between;
   gap: 50px;
 }
 .wrapper-contact .location {
@@ -486,19 +487,11 @@ footer .footer-content .copyright {
   max-width: 100%;
   height: 442px;
 }
-.wrapper-contact .location address {
-  font-style: normal;
-  font-size: 18px;
-  font-weight: 100;
-  max-width: 100%;
-  height: 161px;
-}
 .wrapper-contact .contact-form {
   display: flex;
   flex-direction: column;
   gap: 21px;
-  width: 529px;
-  height: 560px;
+  width: 54%;
 }
 .wrapper-contact .contact-form .form-element {
   border: none;

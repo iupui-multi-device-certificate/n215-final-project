@@ -3,6 +3,7 @@
 .wrapper-contact {
   max-width: 100%;
   display: flex;
+  justify-content: space-between;
   gap: 50px;
 
   // flex-direction: column-reverse;
@@ -15,22 +16,13 @@
       max-width: 100%;
       height: 442px;
     }
-    address {
-      font-style: normal;
-      font-size: 18px; //convert to rem
-      font-weight: 100;
-      max-width: 100%;
-      height: 161px;
-    }
   }
 
   .contact-form {
     display: flex;
     flex-direction: column;
     gap: 21px;
-    //not sure if needs to be relative or absolute size?
-    width: 529px;
-    height: 560px;
+    width: 54%;
 
     .form-element {
       border: none;
