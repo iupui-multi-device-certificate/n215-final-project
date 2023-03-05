@@ -485,6 +485,31 @@ footer .footer-content .copyright {
   flex-direction: column;
   margin-bottom: 95px;
 }
+.about .about-hero {
+  width: 979.5px;
+  height: 378.75px;
+  background-image: url("../images/home-hero.jpg");
+  position: relative;
+  z-index: -2;
+}
+.about .about-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 209, 64, 0.8);
+  z-index: -1;
+}
+.about .about-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8));
+}
 .about h1 {
   margin-top: -53px;
 }

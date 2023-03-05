@@ -1,9 +1,21 @@
-//TODO: yellow overlay
-
 .about {
   display: flex;
   flex-direction: column;
   margin-bottom: 95px;
+  // position: relative;
+
+  .about-hero {
+    width: 979.5px;
+    height: 378.75px;
+    background-image: url("../images/home-hero.jpg");
+    position: relative;
+    z-index: -2;
+    @include overlay-after-bg-image;
+  }
+
+  .about-overlay {
+    @include overlay;
+  }
 
   h1 {
     margin-top: -53px;
