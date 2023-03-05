@@ -4,7 +4,7 @@ $banner-color: $pink;
   position: relative;
   margin-bottom: 57px;
 
-  @include overlay-after($bgcolor: $banner-color);
+  @include overlay-after-bg-image($bgcolor: $banner-color);
 
   img {
     // filter: brightness(50%);

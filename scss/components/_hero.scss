@@ -26,7 +26,7 @@
     opacity: $opacity;
   }
 
-  @include overlay-after;
+  @include overlay-after-bg-image;
   // &::after {
 
   .hero-cta {

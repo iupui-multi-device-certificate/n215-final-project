@@ -3,7 +3,8 @@
 //https://love2dev.com/blog/responsive-hero-background-opacity/
 //https://github.com/docluv/Love2Dev-Code-Samples/blob/master/css/responsive-background-hero/index.html
 
-@mixin overlay-after($bgColor: $yellow, $bgOpacity: 0.8) {
+//for use w/ a background image that is placed in a ::before w/ z-index lower than this
+@mixin overlay-after-bg-image($bgColor: $yellow, $bgOpacity: 0.8) {
   &::after {
     content: "";
     position: absolute;
@@ -14,4 +15,14 @@
     background: rgba($bgColor, $bgOpacity);
     z-index: -1;
   }
+}
+
+//put this on a div just for overlay. overlay div must be inside a container that has position: relative set.
+@mixin overlay($bgColor: $yellow, $bgOpacity: 0.8) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba($bgColor, 0.8), rgba($bgColor, 0.8));
 }
