@@ -489,8 +489,7 @@ footer .footer-content .copyright {
   margin-bottom: 95px;
 }
 .about .about-hero {
-  width: 979.5px;
-  height: 378.75px;
+  height: 379px;
   margin-top: 20px;
   background-image: url("../images/home-hero.jpg");
   position: relative;
@@ -609,10 +608,13 @@ footer .footer-content .copyright {
 /* breakpoint small */
 .blog-post-detail .blog-banner {
   margin: 0 auto;
-  width: 981px;
-  height: 300px;
   margin-bottom: 57px;
   position: relative;
+}
+.blog-post-detail .blog-banner img {
+  display: block;
+  width: 100%;
+  height: 300px;
 }
 .blog-post-detail .blog-banner .blog-overlay {
   position: absolute;
