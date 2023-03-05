@@ -13,7 +13,7 @@ const renderBlogSections = (blogSections) => `
 `;
 
 export const blogDetailView = (blog) => `
-    <article class="blog-post-detail content-width">
+    <article class="blog-post-detail content-width content-padding">
         <div class="blog-banner">    
           <img src="${blog.relativeImagePath}" alt="" />
           <div class="blog-overlay"></div>

@@ -10,7 +10,7 @@ const renderGalleryItems = (galleryItems) => ` ${galleryItems
   .join("")}
 `;
 export const galleryView = (galleryItems) => `
-  <section class="gallery content-width">
+  <section class="gallery content-width content-padding">
     <h1 class="section-title upper underline">Gallery:</h1>
     <div class="gallery-items-wrapper">
       ${renderGalleryItems(galleryItems)}

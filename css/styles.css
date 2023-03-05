@@ -131,6 +131,11 @@ body {
   margin: 0 auto;
 }
 
+.content-padding {
+  padding-top: 65.5px;
+  padding-bottom: 65px;
+}
+
 .upper {
   text-transform: uppercase;
 }
@@ -148,7 +153,6 @@ body {
   font-family: "Gill Sans";
   font-size: 25px;
   text-transform: uppercase;
-  margin-top: 65.5px;
   margin-bottom: 45px;
   display: block;
 }
@@ -356,7 +360,6 @@ footer .footer-content .copyright {
 .navbar {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 85.5px;
 }
 .navbar .nav-content {
   height: 90px;
@@ -488,6 +491,7 @@ footer .footer-content .copyright {
 .about .about-hero {
   width: 979.5px;
   height: 378.75px;
+  margin-top: 20px;
   background-image: url("../images/home-hero.jpg");
   position: relative;
   z-index: -2;

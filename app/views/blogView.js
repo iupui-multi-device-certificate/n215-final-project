@@ -33,7 +33,7 @@ const renderBlogs = (blogs) => ` ${blogs
 `;
 
 export const blogView = (blogs) => `
-<section class="blog content-width ">
+<section class="blog content-width content-padding">
 <h1 class="section-title upper underline">blog:</h1>
 <div class="blogs">
   ${renderBlogs(blogs)}

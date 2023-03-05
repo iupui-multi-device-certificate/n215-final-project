@@ -14,6 +14,11 @@ body {
   margin: 0 auto;
 }
 
+.content-padding {
+  padding-top: 65.5px;
+  padding-bottom: 65px;
+}
+
 .upper {
   text-transform: uppercase;
 }
@@ -32,7 +37,6 @@ body {
   font-family: $font-primary;
   font-size: $font-size--25;
   text-transform: uppercase;
-  margin-top: 65.5px;
   margin-bottom: 45px;
   display: block;
 }

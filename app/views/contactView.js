@@ -1,5 +1,5 @@
 export const contactView = `        
-  <section class="content-width contact">
+  <section class="contact content-width content-padding">
     <h1 class="section-title underline">Contact Us:</h1>
     <div class="wrapper-contact">
     

@@ -8,8 +8,6 @@ $spacing-nav: calc(48 / #{$base-font-size});
   // text-shadow: 1px 1px 1px black;
   margin-left: auto;
   margin-right: auto;
-  //TODO: fix bottom margin since we have varying margin-tops on the section-titles ???
-  margin-bottom: 85.5px;
 
   .nav-content {
     height: 90px;

@@ -1,6 +1,6 @@
 export const aboutView = () => `
 
-<section class="content-width about">
+<section class="about content-width content-padding">
   <div class="about-hero"></div>
 
 <!--
