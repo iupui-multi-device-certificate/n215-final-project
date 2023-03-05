@@ -1,3 +1,5 @@
+//TODO: fix proportions, map should be at right edge
+
 .wrapper-contact {
   max-width: 100%;
   display: flex;
@@ -47,11 +49,31 @@
   display: flex;
   .form-element {
     width: 529px;
+
     padding: 20px;
     border: none;
     opacity: 50%;
   }
   & > * {
     height: 60px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+  .form-subscribe {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-lg) {
+  .wrapper-contact {
+    flex-direction: column;
+
+    .location {
+      width: 100%;
+    }
+    .contact-form {
+      width: 100%;
+    }
   }
 }

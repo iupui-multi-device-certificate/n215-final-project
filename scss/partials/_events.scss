@@ -1,11 +1,13 @@
 .events {
-  height: 320px;
+  min-height: 320px;
   padding: 50px 40px 72px 40px;
   background-color: $purple;
   color: $brand-light;
 
   .events-list {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 
     .event-item {

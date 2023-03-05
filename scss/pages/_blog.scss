@@ -48,9 +48,10 @@
   }
 }
 
-/* breakpoint small */
-// @media only screen and (max-width: $breakpoint-sm) {
-//   .blog-post {
-//     flex-direction: column;
-//   }
-// }
+@media only screen and (max-width: $breakpoint-sm) {
+  .blog-post {
+    .blog-content {
+      max-width: 65%;
+    }
+  }
+}
