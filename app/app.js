@@ -25,48 +25,24 @@ const aboutPage = aboutView;
 //gallery page
 const galleryPage = galleryView(galleryItems);
 
-//gallery detail
-//could be combined with the blog click handler??
-//detailClickHandler(e, view)
-const galleryItemClickHandler = (e) => {
-  let galleryItemID = e.currentTarget.id;
-  // console.log("galleryItemID: ", galleryItemID);
-
-  //if use === get undefined because galleryItem.id is a number
-  //ideally should convert so they're on same data type & then use ===
-  const getGalleryItem = (galleryItemID) =>
-    galleryItems.find((galleryItem) => galleryItemID == galleryItem.id);
-
-  const requestedGalleryItem = getGalleryItem(galleryItemID);
-
-  const galleryItemPage = galleryDetailView(requestedGalleryItem);
-
-  $("#app").html(galleryItemPage);
-};
-
 //blogs page
 const blogPage = blogView(blogs);
-
-//blog detail
-const blogClickHandler = (e) => {
-  let blogID = e.currentTarget.id;
-  // console.log("blogID: ", blogID);
-
-  //if use === get undefined because blog.id is a number
-  //ideally should convert so they're on same data type & then use ===
-  const getBlog = (blogID) => blogs.find((blog) => blogID == blog.id);
-
-  const requestedBlog = getBlog(blogID);
-
-  const blogPage = blogDetailView(requestedBlog);
-
-  $("#app").html(blogPage);
-};
 
 //contact page
 const contactPage = contactView;
 
 // general stuff
+
+//click handler to get detail of item, e.g. blog & gallery items
+const itemClickHandler = (e, view, items) => {
+  let itemID = e.currentTarget.id;
+  const getItem = (itemID) => items.find((item) => itemID == item.id);
+  const requestedItem = getItem(itemID);
+  const itemPage = view(requestedItem);
+
+  $("#app").html(itemPage);
+};
+
 const setPage = (pageID) => {
   /*
     NOTE: eval is a security risk and should be phased out
@@ -111,11 +87,11 @@ const initListeners = () => {
   });
 
   $(document).on("click", ".blog-link", function (e) {
-    blogClickHandler(e);
+    itemClickHandler(e, blogDetailView, blogs);
   });
 
   $(document).on("click", ".gallery-item-link", function (e) {
-    galleryItemClickHandler(e);
+    itemClickHandler(e, galleryDetailView, galleryItems);
   });
 };
 
