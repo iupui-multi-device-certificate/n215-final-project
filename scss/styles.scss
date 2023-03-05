@@ -8,6 +8,7 @@
 @import "core/base";
 
 //mixins
+@import "mixins/font-color";
 @import "mixins/overlay";
 
 //components
@@ -27,5 +28,6 @@
 //pages
 @import "pages/about";
 @import "pages/gallery";
+@import "pages/galleryDetail";
 @import "pages/blog";
 @import "pages/blogDetail";

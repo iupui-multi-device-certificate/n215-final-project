@@ -26,3 +26,23 @@
   width: 100%;
   background: linear-gradient(rgba($bgColor, 0.8), rgba($bgColor, 0.8));
 }
+
+.overlay-1 {
+  @include overlay($yellow, $opacity);
+}
+
+.overlay-2 {
+  @include overlay($pink, $opacity);
+}
+
+.overlay-3 {
+  @include overlay($green, $opacity);
+}
+
+.overlay-4 {
+  @include overlay($purple, $opacity);
+}
+
+.overlay-5 {
+  @include overlay($turquoise, $opacity);
+}

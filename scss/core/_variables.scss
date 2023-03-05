@@ -6,7 +6,9 @@ $brand-light: $white;
 $font-primary: "Gill Sans";
 $font-secondary: "PT Serif";
 
-$body-font-family: "#{$font-primary}, sans-serif";
+//fonts don't look like Gill Sans when use back up, although Fontanello & whatfont both report text is Gill Sans
+// $body-font-family: "#{$font-primary}, sans-serif";
+$body-font-family: "#{$font-primary}";
 
 //1 px = 0.0625 rem
 $px-to-rem-factor: 0.0625;

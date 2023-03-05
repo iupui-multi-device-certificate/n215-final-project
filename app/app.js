@@ -7,6 +7,8 @@ import { aboutView } from "./views/aboutView.js";
 import { galleryItems } from "./data/galleryItems.js";
 import { galleryView } from "./views/galleryView.js";
 
+import { galleryDetailView } from "./views/galleryDetailView.js";
+
 import { blogs } from "./model.js";
 import { blogView } from "./views/blogView.js";
 
@@ -23,13 +25,32 @@ const aboutPage = aboutView;
 //gallery page
 const galleryPage = galleryView(galleryItems);
 
+//gallery detail
+//could be combined with the blog click handler??
+//detailClickHandler(e, view)
+const galleryItemClickHandler = (e) => {
+  let galleryItemID = e.currentTarget.id;
+  // console.log("galleryItemID: ", galleryItemID);
+
+  //if use === get undefined because galleryItem.id is a number
+  //ideally should convert so they're on same data type & then use ===
+  const getGalleryItem = (galleryItemID) =>
+    galleryItems.find((galleryItem) => galleryItemID == galleryItem.id);
+
+  const requestedGalleryItem = getGalleryItem(galleryItemID);
+
+  const galleryItemPage = galleryDetailView(requestedGalleryItem);
+
+  $("#app").html(galleryItemPage);
+};
+
 //blogs page
 const blogPage = blogView(blogs);
 
 //blog detail
 const blogClickHandler = (e) => {
   let blogID = e.currentTarget.id;
-  console.log("blogID: ", blogID);
+  // console.log("blogID: ", blogID);
 
   //if use === get undefined because blog.id is a number
   //ideally should convert so they're on same data type & then use ===
@@ -91,6 +112,10 @@ const initListeners = () => {
 
   $(document).on("click", ".blog-link", function (e) {
     blogClickHandler(e);
+  });
+
+  $(document).on("click", ".gallery-item-link", function (e) {
+    galleryItemClickHandler(e);
   });
 };
 

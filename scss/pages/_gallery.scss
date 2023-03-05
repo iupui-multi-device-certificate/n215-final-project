@@ -12,24 +12,5 @@ $opacity: 0.7;
     img {
       display: block;
     }
-    .overlay-1 {
-      @include overlay($yellow, $opacity);
-    }
-
-    .overlay-2 {
-      @include overlay($pink, $opacity);
-    }
-
-    .overlay-3 {
-      @include overlay($green, $opacity);
-    }
-
-    .overlay-4 {
-      @include overlay($purple, $opacity);
-    }
-
-    .overlay-5 {
-      @include overlay($turquoise, $opacity);
-    }
   }
 }

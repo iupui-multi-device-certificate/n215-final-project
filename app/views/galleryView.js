@@ -1,5 +1,5 @@
 const renderGalleryItem = (galleryItem) => `
-  <a href="#" id="${galleryItem.id}">
+  <a href="#" id="${galleryItem.id}" class="gallery-item-link">
     <img src=${galleryItem.relativeImagePathSmall} />
     <div class="overlay-${galleryItem.id}"></div>
   </a>     

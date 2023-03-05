@@ -1,0 +1,23 @@
+@mixin font-color($color: $yellow) {
+  color: $color;
+}
+
+.font-color-1 {
+  @include font-color;
+}
+
+.font-color-2 {
+  @include font-color($pink);
+}
+
+.font-color-3 {
+  @include font-color($green);
+}
+
+.font-color-4 {
+  @include font-color($purple);
+}
+
+.font-color-5 {
+  @include font-color($turquoise);
+}

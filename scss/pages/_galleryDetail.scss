@@ -1,0 +1,43 @@
+.gallery-item-detail {
+  .gallery-item-banner {
+    margin-bottom: 50.5px;
+    position: relative;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    //text-shadow on these??
+    .gallery-item-header {
+      position: absolute;
+      left: 0;
+      bottom: -70px;
+
+      //text-shadow copied from Adobe XD
+      text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.16);
+
+      .xxl-text {
+        font-size: $font-size--300;
+        letter-spacing: 0px;
+        line-height: 344px;
+      }
+
+      .xl-text {
+        font-size: $font-size--140;
+        letter-spacing: 0px;
+        line-height: 161px;
+      }
+    }
+  }
+  .details {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    font-style: italic;
+    font-weight: $light-weight;
+    letter-spacing: 1.6px;
+    line-height: 18px;
+  }
+}
