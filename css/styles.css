@@ -533,6 +533,14 @@ footer .footer-content .copyright {
   margin-bottom: 57px;
   position: relative;
 }
+.blog-post-detail .blog-banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(238, 67, 103, 0.8), rgba(238, 67, 103, 0.8));
+}
 .blog-post-detail .blog-banner .date-block-large {
   position: absolute;
   top: 50%;
