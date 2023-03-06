@@ -13,3 +13,7 @@ https://in-info-web4.informatics.iupui.edu/~rahensle/n215/final-project
   - https://www.youtube.com/watch?v=pCvZtjoRq1I
   - https://www.freecodecamp.org/news/the-model-view-controller-pattern-mvc-architecture-and-frameworks-explained/
 - To maintain clearer separation of concerns, followed the pattern where the model and view do not interact directly and the controller coordinates this.
+
+## TODOs
+
+- Fix font-size on Gallery Detail page. Not sure how to shrink this while maintaining proportion & position.
