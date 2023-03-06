@@ -541,6 +541,7 @@ footer .footer-content .copyright {
 .events .events-list {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -601,6 +602,7 @@ footer .footer-content .copyright {
 
 .gallery-items-wrapper {
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
 }
